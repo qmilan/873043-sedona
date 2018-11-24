@@ -34,7 +34,31 @@
 			</div>
 			<div class="search-form">
 				<h2>Поиск гостиницы в Седоне</h2>
-				<!--здесь будет форма-->
+				<form class="search-form-modal" action="https://echo.htmlacademy.ru" method="post">
+					<p class="search-item">
+						<label for="date-in">Дата заезда:</label>
+						<input id="date-in" type="text" name="date" value="24 апреля 2017">
+						<!-- <span>
+							<img src="img/calendar.svg" alt="Иконка календаря" width="21" height="22">
+						</span> -->
+					</p>
+					<p class="search-item">
+						<label for="date-out">Дата выезда:</label>
+						<input id="date-out" type="text" name="date" value="4 июля 2017">
+						<!-- <span>
+							<img src="img/calendar.svg" alt="Иконка календаря" width="21" height="22">
+						</span> -->
+					</p>
+					<p class="search-item">
+						<label for="adults">Взрослые:</label>
+						<input id="adults" type="text" value="1">
+					</p>
+					<p class="search-item">
+						<label for="kids">Дети:</label>
+						<input id="kids" type="text" value="0">
+					</p>
+					<button class="button" type="submit">Найти</button>
+				</form>
 			</div>
 		</section>
 	</main>
