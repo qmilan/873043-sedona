@@ -20,8 +20,86 @@
     </header>
 
 		<main class="container">
+      <section class="filters">
+        <h2 class="visually-hidden">Фильтры</h2>
+        <form action="#" class="filter" method="get">
+          <fieldset>
+            <legend>Инфраструктура:</legend>
+            <ul>
+              <li class="filter-option">
+                <input id="filter-pool" type="checkbox" class="visually-hidden filter-input" name="pool" checked>
+                <label for="filter-pool">Бассейн</label>
+              </li>
+              <li class="filter-option">
+                <input id="filter-parking" type="checkbox" class="visually-hidden filter-input" name="parking">
+                <label for="filter-parking">Парковка</label>
+              </li>
+              <li class="filter-option">
+                <input id="filter-wifi" type="checkbox" class="visually-hidden filter-input" name="network">
+                <label for="filter-wifi">Wi-Fi</label>
+              </li>
+            </ul>
+          </fieldset>
+          
+          <fieldset>
+            <legend>Тип жилья:</legend>
+            <ul>
+              <li class="filter-option">
+                <input id="filter-hostel" type="checkbox" class="visually-hidden filter-input" name="hostel" checked>
+                <label for="filter-hostel">Гостиница</label>
+              </li>
+              <li class="filter-option">
+                <input id="filter-motel" type="checkbox" class="visually-hidden filter-input" name="motel" checked>
+                <label for="filter-motel">Мотель</label>
+              </li>
+              <li class="filter-option">
+                <input id="filter-apartments" type="checkbox" class="visually-hidden filter-input" name="apartments" checked>
+                <label for="filter-apartments">Апартаменты</label>
+              </li>
+            </ul>
+          </fieldset>
+
+          <fieldset>
+            <legend>Стоимость в сутки (Р):</legend>
+            <div class="price">
+              <label for="price-min">от</label>
+              <input id="price-min" class="min" name="min" type="text" value="0">
+
+              <label for="price-max">до</label>
+              <input id="price-max" class="max" name="max" type="text" value="3000">
+            </div>
+            <div class="slider">
+              <div class="slider-min"></div>
+              <div class="slider-max"></div>
+              <div class="slider-bar"></div>
+            </div>
+          </fieldset>
+          <button type="submit" class="filter-button">Показать</button>
+        </form>
+      </section>
+
 			<section class="results">
         <h2 class="visually-hidden">Результаты поиска</h2>
+        <div class="results-filters">
+          <h3 class="visually-hidden">Результаты по фильтрам</h3>
+          <p>
+            <label for="amount-found">Найдено:</label>
+            <input id="amount-found" class="amount" type="text" value="3">
+          </p>
+          <span>Сортировка:</span>
+          <ul class="tabs">
+            <li>
+              <button class="button-filter" type="button">По цене</button>
+            </li>
+            <li>
+              <button class="button-filter" type="button">По типу</button>
+            </li>
+            <li>
+              <button class="button-filter" type="button">По рейтингу</button>
+            </li>
+          </ul>
+        </div>
+
 				<div class="results-list">
 					<h3 class="visually-hidden">Список отелей</h3>
 					<ul class="hotel">
