@@ -1,0 +1,239 @@
+body {
+  margin: 0;
+  padding: 0;
+
+  font-family: "PT Sans", Arial, sans-serif;
+  font-size: 14px;
+  line-height: 26px;
+  text-transform: uppercase;
+
+  background-color: #f2f2f2;
+  background-position: top center;
+  background-repeat: no-repeat;
+}
+
+.inner .active {
+  color: #766357;
+}
+.size {
+  width: 1200px;
+  margin: auto;
+}
+
+.main-navigation {
+  font-size: 14px;
+  line-height: 26px;
+  font-weight: bold;
+  text-align: center;
+  color: #000000;
+  background-color: #ffffff;
+}
+
+.main-image {
+  text-align: center;
+  background: url("../img/background-photo.jpg") 0 0;
+  background-repeat: no-repeat;
+}
+
+a {
+  text-decoration: none;
+}
+
+.site-navigation {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.site-navigation a{
+  color: #000000;
+}
+
+.site-navigation a:hover,
+.site-navigation a:focus {
+  color: #81b3d2;
+}
+.site-navigation a:active {
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.welcome-logo {
+  display: inline-block;
+  width: 459px;
+  height: auto;
+  margin: auto;
+}
+
+
+.introduction {
+  line-height: 26px;
+  background: url("../img/intro-background.png") 0 0;
+}
+
+.introduction h2 {
+  font-size: 21px;
+  color: black;
+  font-weight: bold;
+  width: 440px;
+  margin: auto;
+}
+
+.introduction p {
+  font-size: 14px;
+  color: #333333;
+  font-weight: normal;
+}
+
+.search {
+  text-align: center;
+  background: url("../img/intro-background.png") 0 0;
+}
+
+.search-form-title {
+width: 434px;
+margin: auto;
+}
+
+.search-button {
+  font-size: 21px;
+  line-height: 26px;
+  border: none;
+  color: #ffffff;
+  background-color: #766357;
+}
+
+.search-button:hover {
+  background-color: #604e43;
+}
+
+.search-button:focus {
+  color: rgba(255, 255, 255, 0.3);
+  background-color: #503e33;
+}
+
+.search-form-title h2{
+  font-size: 30px;
+  line-height: 36px;
+  color: black;
+  font-weight: bold;
+}
+
+.search-form-title p {
+  font-size: 14px;
+  line-height: 24px;
+  color: #333333;
+  font-weight: normal;
+}
+
+.button {
+  font-size: 21px;
+  line-height: 26px;
+  border: none;
+  color: #ffffff;
+  background-color: #81b3d2;
+}
+
+.button:hover {
+  background-color: #669ec0;
+}
+
+.button:focus {
+  color: rgba(255, 255, 255, 0.3);
+  background-color: #5496bd;
+}
+
+.main-footer {
+  background-color: #ffffff;
+  opacity: 0.9;
+}
+
+.footer-tag b {
+  font-size: 21px;
+  line-height: 26px;
+  color: black;
+  font-weight: bold;
+}
+
+.footer-social,
+.footer-copyright {
+  text-align: center;
+}
+
+.footer-social ul {
+  list-style: none;
+}
+
+.footer-copyright span {
+  font-size: 14px;
+  line-height: 26px;
+  color: black;
+  font-weight: normal;
+}
+
+.hotel-item {
+  list-style: none;
+}
+
+.hotel-item h4 {
+  font-size: 21px;
+  line-height: 26px;
+  color: black;
+  text-align: left;
+  font-weight: bold;
+}
+.hotel-item h4:hover,
+.hotel-item a:focus h4{
+  color: #81b3d2;
+}
+.hotel-item a:active h4 {
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.hotel span {
+  font-size: 14px;
+  line-height: 21px;
+  color: #333333;
+  text-align: left;
+  font-weight: normal;
+}
+
+.hotel-item-button a {
+  font-size: 14px;
+  line-height: 21px;
+  color: #ffffff;
+  text-align: left;
+  font-weight: bold;
+}
+
+.detail {
+  background-color: #81B3D2;
+}
+
+.detail:hover,
+.detail:focus {
+  background-color: #669ec0;
+}
+
+.detail:active {
+  color: rgba(255, 255, 255, 0.3);
+  background-color: #5496bd;
+}
+
+.book {
+  background-color: #766357;
+}
+
+.book:hover,
+.book:focus {
+  background-color: #604e43;
+}
+
+.book:active {
+  color: rgba(255, 255, 255, 0.3);
+  background-color: #503e33;
+}
+.results-list {
+  background-image: url("../img/Layer_16.png");
+}
+
+
