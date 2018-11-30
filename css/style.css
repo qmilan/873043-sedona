@@ -181,11 +181,13 @@ margin: auto;
   text-align: left;
   font-weight: bold;
 }
-.hotel-item h4:hover,
-.hotel-item a:focus h4{
+
+.hotel-item-title:hover h4,
+.hotel-item-title:focus h4 {
   color: #81b3d2;
 }
-.hotel-item a:active h4 {
+
+.hotel-item-title:active h4 {
   color: rgba(0, 0, 0, 0.3);
 }
 
@@ -232,8 +234,9 @@ margin: auto;
   color: rgba(255, 255, 255, 0.3);
   background-color: #503e33;
 }
+
 .results-list {
-  background-image: url("../img/Layer_16.png");
+  background-image: url("../img/inner-main-background.png");
 }
 
 
