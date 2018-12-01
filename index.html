@@ -11,15 +11,17 @@
   <div class="size">
     <header class="main-header">
       <nav class="main-navigation">
-        <a class="main-header-logo">
-          <img src="img/logo.svg" width="140" height="72" alt="Логотип сайта «Sedona»">
-        </a>
         <ul class="site-navigation">
-          <li><a href="#">Информация</a></li>
-          <li><a href="#">Фото и Видео</a></li>
-          <li><a href="#">Карта штата</a></li>
-          <li><a href="inner.html">Гостиницы</a></li>
-        </ul>
+          <li class="menu-item" ><a href="#">Информация</a></li>
+          <li class="menu-item" ><a href="#">Фото и Видео</a></li>
+          <li class="menu-logo">
+            <a class="main-header-logo">
+              <img src="img/logo.svg" width="140" height="72" alt="Логотип сайта «Sedona»">
+            </a>
+          </li>
+          <li class="menu-item" ><a href="#">Карта штата</a></li>
+          <li class="menu-item" ><a href="inner.html">Гостиницы</a></li>
+            </ul>
       </nav>
     </header>
 
@@ -83,34 +85,37 @@
       <section class="search">
         <div class="search-form-title">
           <h2>Заинтересовались?</h2>
-          <p>Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
+          <p>Укажите предполагаемые даты поездки,<br>и мы покажем вам лучшие предложения гостиниц в Седоне</p>
         </div>
         <div class="search-form">
           <button class="search-button">Поиск гостиницы в Седоне</button>
           <form class="search-form-modal" action="https://echo.htmlacademy.ru" method="post">
-            <p class="search-item">
-              <label for="date-in">Дата заезда:</label>
-              <input id="date-in" type="text" name="date" value="24 апреля 2017">
-              <!-- <span>
-                              <img src="img/calendar.svg" alt="Иконка календаря" width="21" height="22">
-                          </span> -->
-            </p>
-            <p class="search-item">
-              <label for="date-out">Дата выезда:</label>
-              <input id="date-out" type="text" name="date" value="4 июля 2017">
-              <!-- <span>
-                              <img src="img/calendar.svg" alt="Иконка календаря" width="21" height="22">
-                          </span> -->
-            </p>
-            <p class="search-item">
-              <label for="adults">Взрослые:</label>
-              <input id="adults" type="text" value="1">
-            </p>
-            <p class="search-item">
-              <label for="kids">Дети:</label>
-              <input id="kids" type="text" value="0">
-            </p>
-            <button class="button" type="submit">Найти</button>
+            <div class="into-form">
+              <p class="search-item">
+                <label for="date-in">Дата заезда:</label>
+                <input id="date-in" type="text" name="date" value="24 апреля 2017">
+                <!-- <span>
+                                <img src="img/calendar.svg" alt="Иконка календаря" width="21" height="22">
+                            </span> -->
+              </p>
+              <p class="search-item">
+                <label for="date-out">Дата выезда:</label>
+                <input id="date-out" type="text" name="date" value="4 июля 2017">
+                <!-- <span>
+                                <img src="img/calendar.svg" alt="Иконка календаря" width="21" height="22">
+                            </span> -->
+              </p>
+              <p class="search-item">
+                <label for="adults">Взрослые:</label>
+                <input id="adults" type="text" value="1">
+              </p>
+              <p class="search-item">
+                <label for="kids">Дети:</label>
+                <input id="kids" type="text" value="0">
+              </p>
+
+              <button class="button" type="submit">Найти</button>
+            </div>
           </form>
         </div>
       </section>
@@ -124,23 +129,25 @@
     </main>
 
     <footer class="main-footer">
-      <div class="footer-tag">
-        <a href="#">
-          <b>#visitSEDONA</b>
-        </a>
-      </div>
-      <div class="footer-social">
-        <ul>
-          <li><a class="social-button" href="#">Твиттер</a></li>
-          <li><a class="social-button" href="#">Фейсбук</a></li>
-          <li><a class="social-button" href="#">Youtube</a></li>
-        </ul>
-      </div>
-      <div class="footer-copyright">
-        <span>Website by</span>
-        <a href="https://htmlacademy.ru/intensive/htmlcss">
-          <img src="#" alt="Логотип HTML Academy" width="116" height="42">
-        </a>
+      <div class="container">
+        <div class="footer-tag">
+          <a href="#">
+            <b>#visitSEDONA</b>
+          </a>
+        </div>
+        <div class="footer-social">
+          <ul>
+            <li><a class="social-button" href="#">Твиттер</a></li>
+            <li><a class="social-button" href="#">Фейсбук</a></li>
+            <li><a class="social-button" href="#">Youtube</a></li>
+          </ul>
+        </div>
+        <div class="footer-copyright">
+          <span>Website by</span>
+          <a href="https://htmlacademy.ru/intensive/htmlcss">
+            <img src="img/logo-htmlacademy.svg" alt="Логотип HTML Academy" width="115" height="41">
+          </a>
+        </div>
       </div>
     </footer>
   </div>
