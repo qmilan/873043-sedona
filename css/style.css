@@ -159,8 +159,21 @@ a {
   right: 55px;
 }
 
-.calendar:hover path {
- background-color: #cacaca;
+.calendar path {
+ fill: #cacaca;
+}
+
+.calendar:hover path,
+.calendar:focus path{
+  fill: #000000;
+}
+
+.calendar:focus{
+  outline: none;
+}
+
+.calendar:active path {
+  fill: #81b3d2;
 }
 
 .search-item .adults {
@@ -197,15 +210,17 @@ label.kids-label {
 }
 
 .search-item input {
-  /*padding: 0;*/
   width: 346px;
-  height: 38px;
   background-color: #f2f2f2;
   border: none;
   font-size: 14px;
   line-height: 26px;
   color: black;
   font-weight: bold;
+}
+
+.search-item input:focus {
+  outline: none;
 }
 
 .search-item button {
@@ -218,8 +233,23 @@ label.kids-label {
   font-weight: 900;
 }
 
-.search-item button:hover {
-  color: #f2f2f2;
+.search-item button:focus {
+  outline: none;
+}
+
+.search-item span {
+  font-size: x-large;
+  color: rgb(169,169,169);
+}
+
+.search-item span:hover,
+.search-item span:focus {
+  color: #000000;
+}
+
+.search-item span:active {
+  color: #81b3d2;
+  border: none;
 }
 
 .short-horizontal {
@@ -250,7 +280,6 @@ label.kids-label {
 
 .search-form-title {
   width: 434px;
-  /*height: 96px;*/
   white-space: nowrap;
   text-align: center;
   margin: 0 auto;
@@ -267,7 +296,8 @@ label.kids-label {
   color: #ffffff;
   background-color: #766357;
   padding: 0;
-  text-transform: uppercase
+  text-transform: uppercase;
+  outline: none;
 }
 
 .search-button:hover {
@@ -309,7 +339,6 @@ label.kids-label {
   width: 568px;
   height: 395px;
   margin: 0 316px;
-  /*padding: 55px;*/
 }
 
 .button {
@@ -320,7 +349,8 @@ label.kids-label {
   border: none;
   color: #ffffff;
   background-color: #81b3d2;
-  text-transform: uppercase
+  text-transform: uppercase;
+  outline: none;
 }
 
 .button:hover {
@@ -433,18 +463,17 @@ label.kids-label {
   font-weight: normal;
   margin-right: 6px;
 }
-/*.footer-copyright svg {*/
-  /*display: block;*/
-  /*color: #231f20;*/
-/*}*/
+.footer-copyright svg {
+  display: block;
+}
 
 .footer-copyright:hover path,
 .footer-copyright:focus path{
-  color: #81b3d2;
+  fill: #81b3d2;
 }
 
 .footer-copyright:active path{
-  color: #bdbbbc;
+  fill: #bdbbbc;
 }
 
 /* страница inner*/
@@ -453,6 +482,7 @@ label.kids-label {
   padding: 30px 0;
   list-style: none;
   height: 90px;
+  padding-left: 72px;
 }
 
 .hotel-item h4 {
@@ -479,7 +509,7 @@ label.kids-label {
 }
 
 .hotel {
-  padding-left: 72px ;
+  padding: 0;
   margin: 0;
 }
 
@@ -535,7 +565,6 @@ label.kids-label {
 }
 
 .style-button {
-  /*padding: 6px 15px;*/
   height: 27px;
 }
 
@@ -598,17 +627,14 @@ label.kids-label {
 }
 
 .hr {
-  /*border-top: 1px solid; !* Параметры линии  *!*/
   height: 1px; /* Высота блока */
   background: url("../img/hr.png");
 }
 
 .rate-number {
   width: 110px;
-  /* text-align: center; */
   background-color: #f2f2f2;
   height: 27px;
-  /*font-family: PTSans;*/
   font-size: 14px;
   line-height: 21px;
   display: flex;
@@ -620,10 +646,20 @@ label.kids-label {
   background-color: #ebebeb;
 }
 
-.into-form input:focus {
+.long-horizontal input:focus {
   background-color: #ffffff;
   border: 2px solid #e5e5e5;
 }
 
+.short-horizontal input:focus {
+  background-color: #ffffff;
+  border: 2px solid #e5e5e5;
+  width: 34px;
+  height: 34px;
+}
+
+.into-form {
+  box-shadow: 0px 7px 15px 0 rgba(0, 1, 1, 0.15);
+}
 
 
