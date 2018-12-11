@@ -75,7 +75,7 @@ a {
   flex-direction: row;
   margin: 0;
   padding: 0;
-  height: 56px;
+  min-height: 56px;
   list-style: none;
   padding: 0 73px;
 }
@@ -260,7 +260,7 @@ label.kids-label {
 .short-horizontal input {
   text-align: center;
   width: 38px;
-  justify-content: space-between;
+  /*justify-content: space-between;*/
 }
 
 .into-form {
@@ -292,6 +292,7 @@ label.kids-label {
   height: 86px;
   font-size: 21px;
   line-height: 26px;
+  font-weight: bold;
   border: none;
   color: #ffffff;
   background-color: #766357;
@@ -337,7 +338,7 @@ label.kids-label {
   background: url("../img/intro-background.png") 0 0;
   position: absolute;
   width: 568px;
-  height: 395px;
+  height: auto;
   margin: 0 316px;
 }
 
@@ -346,6 +347,7 @@ label.kids-label {
   height: 58px;
   font-size: 21px;
   line-height: 26px;
+  font-weight: bold;
   border: none;
   color: #ffffff;
   background-color: #81b3d2;
@@ -389,16 +391,19 @@ label.kids-label {
   /*height: 120px;*/
 }
 
-
+.inner .main-footer {
+  border: 1px solid #e5e5e5;
+}
 
 .main-footer .container {
-  height: 48px;
+  min-height: 48px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  padding-left: 100px;
-  padding-right: 100px;
+  /*padding-left: 100px;*/
+  /*padding-right: 100px;*/
+  flex: 1;
 }
 
 .social-button {
@@ -406,7 +411,7 @@ label.kids-label {
   align-items: center;
   justify-content: center;
   width: 46px;
-  height: 48px;
+  min-height: 48px;
   background-color: #81b3d2;
 }
 
@@ -424,7 +429,7 @@ label.kids-label {
 }
 
 .footer-tag {
-  width: 198px;
+  width: 400px;
   text-align: center;
   /*margin: 14px 0;*/
 }
@@ -437,6 +442,7 @@ label.kids-label {
 }
 .footer-social {
   padding: 0;
+  width: 400px;
 }
 
 .footer-social ul {
@@ -450,10 +456,10 @@ label.kids-label {
 }
 
 .footer-copyright {
-  width: 198px;
+  width: 400px;
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: center;
 }
 
 .footer-copyright span {
@@ -461,10 +467,10 @@ label.kids-label {
   line-height: 26px;
   color: black;
   font-weight: normal;
-  margin-right: 6px;
 }
 .footer-copyright svg {
   display: block;
+  margin-left: 8px;
 }
 
 .footer-copyright:hover path,
@@ -483,6 +489,7 @@ label.kids-label {
   list-style: none;
   height: 90px;
   padding-left: 72px;
+  border-top: 1px solid #e5e5e5;
 }
 
 .hotel-item h4 {
@@ -626,11 +633,6 @@ label.kids-label {
   align-items: flex-end;
 }
 
-.hr {
-  height: 1px; /* Высота блока */
-  background: url("../img/hr.png");
-}
-
 .rate-number {
   width: 110px;
   background-color: #f2f2f2;
@@ -649,13 +651,15 @@ label.kids-label {
 .long-horizontal input:focus {
   background-color: #ffffff;
   border: 2px solid #e5e5e5;
+  box-sizing: border-box;
 }
 
 .short-horizontal input:focus {
   background-color: #ffffff;
   border: 2px solid #e5e5e5;
-  width: 34px;
-  height: 34px;
+  box-sizing: border-box;
+  /*width: 34px;*/
+  /*height: 34px;*/
 }
 
 .into-form {
