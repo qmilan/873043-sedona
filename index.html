@@ -27,56 +27,59 @@
       <div class="main-image">
         <h1 class="visually-hidden">Сайт «Седона»</h1>
         <img src="img/intro-welcome.svg" alt="Слоган сайта Седона" class="welcome-logo" width="459" height="353">
-        <div class="polygon">
-          <img src="img/polygon.png" alt="">
-        </div>
-        <section class="introduction">
-          <h2>Седона — небольшой городок в Аризоне,<br> заслуживающий большего!</h2>
-          <p>Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
-        </section>
+        <img class="polygon" src="img/polygon.svg" alt="" width="1200" height="59px">
       </div>
-
+      <section class="introduction">
+        <h2>Седона — небольшой городок в Аризоне,<br> заслуживающий большего!</h2>
+        <p>Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
+      </section>
       <section class="features">
         <h2 class="visually-hidden">Преимущества</h2>
         <ul>
           <li class="feature-item town">
-            <h3>Настоящий городок</h3>
-            <span> — №1 —</span>
-            <p>Седона — не аттракцион для туристов, там течёт своя жизнь</p>
-            <img src="#" alt="Картинка городка" width="800" height="256">
+            <div class="text">
+              <h3>Настоящий<br>городок</h3>
+              <span> — №1 —</span>
+              <p>Седона — не аттракцион для туристов, там течёт своя жизнь</p>
+            </div>
+            <!--<div class="first-image">-->
+              <img src="img/town.jpg" alt="Картинка городка" width="800" height="256">
+            <!--</div>-->
           </li>
-          <li class="feature-item col white">
+          <li class="feature-item col white house">
             <h3>Жильё</h3>
-            <p>Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
+            <p>Рекомендуем пожить в настоящем<br>мотеле, всё как в кино!</p>
           </li>
-          <li class="feature-item col white">
+          <li class="feature-item col white food">
             <h3>Еда</h3>
-            <p>Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
+            <p>Всегда заказывайте фирменный бургер,<br>вы не разочаруетесь!</p>
           </li>
-          <li class="feature-item col white">
+          <li class="feature-item col white burger">
             <h3>Сувениры</h3>
-            <p>Не только китайского, но и местного производства!</p>
+            <p>Не только китайского, но и местного<br>производства!</p>
           </li>
 
           <li class="feature-item mountain">
-            <h3>Там есть Мост дьявола</h3>
+            <div class="text mountain-text">
+            <h3>Там есть<br>Мост дьявола</h3>
             <span> — №2 —</span>
             <p>Да, по нему можно пройти! Если конечно вы осмелитесь</p>
-            <img src="#" alt="Картинка «Мост Дьявола» " width="800" height="256">
+            </div>
+            <img src="img/mountain.jpg" alt="Картинка «Мост Дьявола» " width="800" height="256">
           </li>
 
-          <li class="feature-item col grey">
-            <h3>Небольшая площадь</h3>
+          <li class="feature-item col grey third_reason">
+            <h3>Небольшая<br>площадь</h3>
             <span>— №3 —</span>
             <p>Все достопримечательности  находятся очень близко</p>
           </li>
-          <li class="feature-item col grey">
-            <h3>Красивая дорога</h3>
+          <li class="feature-item col grey fourth_reason">
+            <h3>Красивая<br>дорога</h3>
             <span>— №4 —</span>
             <p>Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
           </li>
-          <li class="feature-item col grey">
-            <h3>Мало туристов</h3>
+          <li class="feature-item col grey fifth_reason">
+            <h3>Мало<br>туристов</h3>
             <span>— №5 —</span>
             <p>Большинство едет в гранд каньон и толпится там</p>
           </li>
@@ -113,15 +116,15 @@
             <div class="short-horizontal">
               <p class="search-item adults">
                 <label for="adults">Взрослые:</label>
-                <button type="button"><span>&ndash;</span></button>
+                <button type="button">&ndash;</button>
                   <input class="count-button" id="adults" type="text" value="2">
-                  <button type="button"><span>+</span></button>
+                  <button type="button">+</button>
               </p>
               <p class="search-item">
                 <label for="kids" class="kids-label">Дети:</label>
-                <button type="button"><span>&ndash;</span></button>
+                <button type="button">&ndash;</button>
                 <input class="count-button" id="kids" type="text" value="0">
-                <button type="button"><span>+</span></button>
+                <button type="button">+</button>
               </p>
             </div>
             <button class="button" type="submit">Найти</button>
