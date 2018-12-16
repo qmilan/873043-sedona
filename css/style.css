@@ -393,6 +393,7 @@ label.kids-label {
 
 .search-item input::placeholder  {
   color: black;
+  opacity: 1;
 }
 
 .search-item input:focus {
