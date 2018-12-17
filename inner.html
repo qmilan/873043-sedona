@@ -26,7 +26,7 @@
     <main class="container">
       <section class="filters">
         <h2 class="visually-hidden">Фильтры</h2>
-        <form action="#" class="filter" method="get">
+        <form action="https://echo.htmlacademy.ru" class="filter" method="get">
           <fieldset>
             <legend>Инфраструктура:</legend>
             <ul>
@@ -86,22 +86,41 @@
         <h2 class="visually-hidden">Результаты поиска</h2>
         <div class="results-filters">
           <h3 class="visually-hidden">Результаты по фильтрам</h3>
-          <p>
-            <label for="amount-found">Найдено:</label>
-            <input id="amount-found" class="amount" type="text" value="3">
-          </p>
-          <span>Сортировка:</span>
-          <ul class="tabs">
-            <li>
-              <a class="button-filter" href="#">По цене</a>
-            </li>
-            <li>
-              <a class="button-filter" href="#">По типу</a>
-            </li>
-            <li>
-              <a class="button-filter" href="#">По рейтингу</a>
-            </li>
-          </ul>
+          <div class="result-text">
+            <p>
+              <label>Найдено:</label>
+              <span>3</span>
+            </p>
+
+          </div>
+          <div class="page-filter">
+            <div class="found-filter">
+              <span>Сортировка:</span>
+              <ul class="tabs">
+                <li>
+                  <a class="button-filter blue-text" href="#">По цене</a>
+                </li>
+                <li>
+                  <a class="button-filter grey-text" href="#">По типу</a>
+                </li>
+                <li>
+                  <a class="button-filter grey-text" href="#">По рейтингу</a>
+                </li>
+              </ul>
+            </div>
+            <div class="sort">
+              <a class="up">
+                <span class="visually-hidden">Стрелка вверх</span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10">
+                <path fill="#231F20" d="M5.5 0L0 10h11z"/></svg>
+              </a>
+              <a class="down">
+                <span class="visually-hidden">Стрелка вниз</span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10">
+                <path fill="#231F20" d="M5.5 10L0 0h11"/></svg>
+              </a>
+            </div>
+          </div>
         </div>
 
         <div class="results-list">

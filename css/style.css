@@ -107,6 +107,7 @@ input[type="checkbox"].visually-hidden {
 .main-image {
   text-align: center;
   background: url("../img/background-photo.jpg") 0 0;
+  background-color: #b3c2d8;
   background-repeat: no-repeat;
   background-position-y: -56px;
   width: 1200px;
@@ -700,6 +701,14 @@ label.kids-label {
   color: #766357;
 }
 
+.up path {
+  fill: #cacaca;
+}
+
+.down path{
+  fill: #81b3d2;
+}
+
 .hotel-item {
   display: flex;
   padding: 30px 0;
@@ -822,10 +831,67 @@ label.kids-label {
   background-color: #503e33;
 }
 
+.results-filters {
+  display: flex;
+  padding-left: 72px;
+  align-items: center;
+  justify-content: flex-start;
+  padding-right: 73px;
+  height: 86px;
+}
+
+.result-text {
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: bold;
+}
+
+.result-text p {
+  width: 135px;
+}
+
 .results-list {
   background-image: url("../img/inner-main-background.png");
 }
 
+.page-filter {
+  margin-left: 30px;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  align-items: baseline;
+}
+
+.found-filter {
+  display: flex;
+  font-size: 12px;
+  line-height: 18px;
+}
+
+.tabs {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  /*flex-direction: row;*/
+  /*text-decoration: underline;*/
+
+  margin-right: 33px;
+  margin-left: 40px;
+}
+
+.button-filter {
+  margin-right: 33px;
+}
+
+.blue-text {
+  color: #81b3d2;
+}
+
+.grey-text {
+  color: rgba(0, 0, 0, 0.3);
+  border-bottom: 1px dotted #81b3d2;
+}
 
 .description {
   display: flex;
@@ -906,8 +972,9 @@ label.kids-label {
   }
 }
 
+
 .filter-range {
-  width: 314px;
+  width: 316px;
   color: #ffffff;
   text-transform: uppercase;
 }
@@ -950,14 +1017,14 @@ label.kids-label {
   cursor: pointer;
 }
 
-.price-controls .min-price {
-  width: 90px;
-  padding-left: 65px;
-}
-
 .price-controls .max-price {
   width: 90px;
-  padding-left: 52px;
+  padding-left: 56px;
+}
+
+.price-controls .min-price {
+  width: 90px;
+  padding-left: 64px;
 }
 
 .price-controls input {
