@@ -31,15 +31,15 @@
             <legend>Инфраструктура:</legend>
             <ul>
               <li class="filter-option">
-                <input id="filter-pool" type="checkbox" class="visually-hidden filter-input filter-input-checkbox" name="pool" checked>
+                <input id="filter-pool" type="checkbox" class="visually-hidden filter-input-checkbox" name="pool" checked>
                 <label for="filter-pool">Бассейн</label>
               </li>
               <li class="filter-option">
-                <input id="filter-parking" type="checkbox" class="visually-hidden filter-input filter-input-checkbox" name="parking">
+                <input id="filter-parking" type="checkbox" class="visually-hidden filter-input-checkbox" name="parking">
                 <label for="filter-parking">Парковка</label>
               </li>
               <li class="filter-option">
-                <input id="filter-wifi" type="checkbox" class="visually-hidden filter-input filter-input-checkbox" name="network">
+                <input id="filter-wifi" type="checkbox" class="visually-hidden filter-input-checkbox" name="network" disabled>
                 <label for="filter-wifi">Wi-Fi</label>
               </li>
             </ul>
@@ -49,21 +49,21 @@
             <legend>Тип жилья:</legend>
             <ul>
               <li class="filter-option">
-                <input id="filter-hostel" type="checkbox" class="visually-hidden filter-input filter-input-checkbox" name="hostel" checked>
+                <input id="filter-hostel" type="checkbox" class="visually-hidden filter-input-checkbox" name="hostel" checked>
                 <label for="filter-hostel">Гостиница</label>
               </li>
               <li class="filter-option">
-                <input id="filter-motel" type="checkbox" class="visually-hidden filter-input filter-input-checkbox" name="motel" checked>
+                <input id="filter-motel" type="checkbox" class="visually-hidden filter-input-checkbox" name="motel" checked>
                 <label for="filter-motel">Мотель</label>
               </li>
               <li class="filter-option">
-                <input id="filter-apartments" type="checkbox" class="visually-hidden filter-input filter-input-checkbox" name="apartments" checked>
+                <input id="filter-apartments" type="checkbox" class="visually-hidden filter-input-checkbox" name="apartments" checked disabled>
                 <label for="filter-apartments">Апартаменты</label>
               </li>
             </ul>
           </fieldset>
 
-            <div class="filter-range">
+          <div class="filter-range">
             <div class="filter-range-title">Стоимость в сутки (р):</div>
             <div class="price-controls">
               <label class="min-price">от <input type="text" name="min-price" value="0"></label>
@@ -76,9 +76,8 @@
               <div class="range-toggle range-toggle-min"></div>
               <div class="range-toggle range-toggle-max"></div>
             </div>
-
-          <button type="submit" class="btn-transparent">Показать</button>
-            </div>
+            <button type="submit" class="btn-transparent">Показать</button>
+          </div>
         </form>
       </section>
 
@@ -98,17 +97,17 @@
               <span>Сортировка:</span>
               <ul class="tabs">
                 <li>
-                  <a class="button-filter blue-text" href="#">По цене</a>
+                  <a class="button-filter active-text" href="#">По цене</a>
                 </li>
                 <li>
-                  <a class="button-filter grey-text" href="#">По типу</a>
+                  <a class="button-filter inactive-text" href="#">По типу</a>
                 </li>
                 <li>
-                  <a class="button-filter grey-text" href="#">По рейтингу</a>
+                  <a class="button-filter inactive-text" href="#">По рейтингу</a>
                 </li>
               </ul>
             </div>
-            <div class="sort">
+            <div>
               <a class="up">
                 <span class="visually-hidden">Стрелка вверх</span>
                 <svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10">

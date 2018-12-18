@@ -42,9 +42,7 @@
               <span> — №1 —</span>
               <p>Седона — не аттракцион для туристов, там течёт своя жизнь</p>
             </div>
-            <!--<div class="first-image">-->
-              <img src="img/town.jpg" alt="Картинка городка" width="800" height="256">
-            <!--</div>-->
+            <img src="img/town.jpg" alt="Картинка городка" width="800" height="256">
           </li>
           <li class="feature-item col white house">
             <h3>Жильё</h3>
@@ -61,9 +59,9 @@
 
           <li class="feature-item mountain">
             <div class="text mountain-text">
-            <h3>Там есть<br>Мост дьявола</h3>
-            <span> — №2 —</span>
-            <p>Да, по нему можно пройти! Если конечно вы осмелитесь</p>
+              <h3>Там есть<br>Мост дьявола</h3>
+              <span> — №2 —</span>
+              <p>Да, по нему можно пройти! Если конечно вы осмелитесь</p>
             </div>
             <img src="img/mountain.jpg" alt="Картинка «Мост Дьявола» " width="800" height="256">
           </li>
@@ -117,8 +115,8 @@
               <p class="search-item adults">
                 <label for="adults">Взрослые:</label>
                 <button type="button">&ndash;</button>
-                  <input class="count-button" id="adults" name="adults" type="text" placeholder="2">
-                  <button type="button">+</button>
+                <input class="count-button" id="adults" name="adults" type="text" placeholder="2">
+                <button type="button">+</button>
               </p>
               <p class="search-item">
                 <label for="kids" class="kids-label">Дети:</label>
@@ -213,7 +211,7 @@
         console.log("Нужно заполнить обязательные поля: дата заезда, дата выезда, взрослые, дети!")
       } else {
         localStorage.setItem("adults", adults.value);
-       // localStorage.setItem("kids", kids.value);
+        localStorage.setItem("kids", kids.value);
       }
      });
   </script>

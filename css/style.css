@@ -71,13 +71,13 @@ input[type="checkbox"].visually-hidden {
   color: #000000;
 }
 
-.site-navigation a:hover,
+.site-navigation a:not(.active):hover,
 .site-navigation a:focus {
   color: #81b3d2;
   outline: none;
 }
 
-.site-navigation a:active {
+.site-navigation a:not(.active):active {
   color: rgba(0, 0, 0, 0.3);
 }
 
@@ -104,6 +104,7 @@ input[type="checkbox"].visually-hidden {
   justify-content: flex-end;
 }
 
+/*main*/
 .main-image {
   text-align: center;
   background: url("../img/background-photo.jpg") 0 0;
@@ -114,13 +115,6 @@ input[type="checkbox"].visually-hidden {
   height: auto;
   position: relative;
 }
-
-.polygon {
-  position: absolute;
-  bottom: -1px;
-  left: 0;
-}
-
 .welcome-logo {
   display: inline-block;
   width: 459px;
@@ -129,12 +123,19 @@ input[type="checkbox"].visually-hidden {
   margin-bottom: 71px;
 }
 
+.polygon {
+  position: absolute;
+  bottom: -1px;
+  left: 0;
+}
+
 .features ul {
   margin: 0;
   padding: 0;
   display: flex;
   flex-wrap: wrap;
 }
+
 .feature-item {
   list-style: none;
   height: 256px;
@@ -176,7 +177,6 @@ input[type="checkbox"].visually-hidden {
 /*второй раздел*/
 .col {
   position: relative;
-  /*outline: 1px solid red;*/
   width: 400px;
   padding-left: auto;
   padding-right: auto;
@@ -188,22 +188,22 @@ input[type="checkbox"].visually-hidden {
   align-items: center;
   height: 330px;
 }
+
 .col h3,
 .col p {
+  line-height: 21px;
   margin: 0;
   padding: 0;
 }
 
 .col h3  {
   font-size: 21px;
-  line-height: 21px;
   font-weight: bold;
   margin-bottom: 24px;
 }
 
 .col p  {
   font-size: 14px;
-  line-height: 21px;
   color: #333333;
   text-align: center;
 }
@@ -279,10 +279,6 @@ input[type="checkbox"].visually-hidden {
   text-align: center;
   color: #333333;
 }
-
-
-
-
 
 .introduction {
   text-align: center;
@@ -435,10 +431,10 @@ label.kids-label {
   margin-bottom: 53px;
   width: 100%;
 }
+
 .short-horizontal input {
   text-align: center;
   width: 38px;
-  /*justify-content: space-between;*/
 }
 
 .into-form {
@@ -616,7 +612,6 @@ label.kids-label {
 .footer-tag {
   width: 400px;
   text-align: center;
-  /*margin: 14px 0;*/
 }
 
 .footer-tag b {
@@ -671,7 +666,7 @@ label.kids-label {
 .filters {
   background: url("../img/filter-background.jpg") 0 0;
   background-position-y: -290px;
-  padding: 26px 73px 31px;
+  padding: 27px 74px 33px 72px;
   line-height: 21px;
   text-align: left;
 }
@@ -686,11 +681,11 @@ label.kids-label {
   font-size: 16px;
   color: #ffffff;
   font-weight: bold;
-  margin-bottom: 26px;
+  margin-bottom: 24px;
 }
 
 .filter fieldset:nth-child(1) {
-  margin-right: 117px;
+  margin-right: 119px;
 }
 
 .filter fieldset:nth-child(2) {
@@ -705,7 +700,21 @@ label.kids-label {
   fill: #cacaca;
 }
 
+.down {
+  margin-left: 8px;
+}
+
 .down path{
+  fill: #81b3d2;
+}
+
+.up:hover path,
+.down:hover path{
+  fill: #231f20;
+}
+
+.up:active path,
+.down:active path{
   fill: #81b3d2;
 }
 
@@ -750,11 +759,8 @@ label.kids-label {
   margin: 0;
   padding: 0;
   margin-bottom: 10px;
-
   display: inline-flex;
-  /*flex-direction: row;*/
   justify-content: space-between;
-  /*width: 180px;*/
 }
 
 .hotel-item-category {
@@ -794,7 +800,6 @@ label.kids-label {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  /*width: 110px;*/
 }
 
 .style-button {
@@ -873,9 +878,6 @@ label.kids-label {
   margin: 0;
   padding: 0;
   display: flex;
-  /*flex-direction: row;*/
-  /*text-decoration: underline;*/
-
   margin-right: 33px;
   margin-left: 40px;
 }
@@ -884,13 +886,23 @@ label.kids-label {
   margin-right: 33px;
 }
 
-.blue-text {
+.active-text {
   color: #81b3d2;
 }
 
-.grey-text {
+.inactive-text {
   color: rgba(0, 0, 0, 0.3);
   border-bottom: 1px dotted #81b3d2;
+}
+
+.inactive-text:not(.active-text):hover {
+  color: #81b3d2;
+  border-bottom: 1px dotted #81b3d2;
+}
+
+.inactive-text:not(.active-text):active {
+  color: #000000;
+  border-bottom: none;
 }
 
 .description {
@@ -942,8 +954,6 @@ label.kids-label {
   background-color: #ffffff;
   border: 2px solid #e5e5e5;
   box-sizing: border-box;
-  /*width: 34px;*/
-  /*height: 34px;*/
 }
 
 .into-form {
@@ -953,22 +963,18 @@ label.kids-label {
 @keyframes bounce {
   0% {
     transform: translateY(-300px);
-
   }
 
   70% {
     transform: translateY(30px);
-
   }
 
   90% {
     transform: translateY(-10px);
-
   }
 
   100% {
     transform: translateY(0);
-
   }
 }
 
@@ -980,7 +986,7 @@ label.kids-label {
 }
 
 .filter-range-title {
-  margin-bottom: 11px;
+  margin-bottom: 10px;
 
   font-weight: bold;
   font-size: 16px;
@@ -1011,9 +1017,9 @@ label.kids-label {
   display: inline-block;
 
   font-size: 14px;
-  line-height: 32px;
+  line-height: 21px;
   vertical-align: top;
-
+  padding-top: 5px;
   cursor: pointer;
 }
 
@@ -1040,7 +1046,6 @@ label.kids-label {
 
 .range-controls {
   position: relative;
-
   margin-bottom: 32px;
 }
 
@@ -1062,7 +1067,6 @@ label.kids-label {
   top: -9px;
   width: 4px;
   height: 4px;
-
   background: #ababab;
   border: 8px solid #ffffff;
   border-radius: 50%;
@@ -1071,7 +1075,8 @@ label.kids-label {
 }
 
 .range-toggle:hover {
-  background: #1c4f80;
+  width: 6px;
+  height: 6px;
 }
 
 .range-toggle-min {
@@ -1084,8 +1089,8 @@ label.kids-label {
 
 .btn-transparent {
   display: block;
-  margin: 0 auto;
-  padding: 6px 35px;
+  margin-left: 85px;
+  padding: 6px 34px 6px 34px;
 
   font-size: 14px;
   line-height: 20px;
@@ -1113,7 +1118,6 @@ label.kids-label {
 .filter ul {
   padding: 0;
   margin: 0;
-
   list-style: none;
   line-height: 21px;
   display: flex;
@@ -1124,17 +1128,16 @@ label.kids-label {
 
 .filter li {
   display: flex;
+  margin-bottom: 27px;
 }
 
 .filter-option {
-  /*margin-bottom: 22px;*/
   padding-left: 40px;
-  /*background: rgba(0, 128, 0, 0.2);*/
-  /*box-shadow: 0 0 0 3px green;*/
 }
 
 .filter-option:last-child {
   margin-bottom: 0;
+  margin-top: -1px;
 }
 
 .filter-option label {
@@ -1142,7 +1145,6 @@ label.kids-label {
   font-size: 14px;
   color: #ffffff;
   display: block;
-
   cursor: pointer;
   user-select: none;
 }
@@ -1154,24 +1156,27 @@ label.kids-label {
   top: 0;
   width: 27px;
   height: 23px;
-
-
-  background-image: url("../img/checkbox-off.svg");
+  background-image: url("../img/checkbox-off.png");
   background-repeat: no-repeat;
   background-position: 0 0
+}
+/*для примера*/
+.filter-input-checkbox:disabled + label::before {
+  background-image: url("../img/checkbox-off-disabled.png");
 }
 
 .filter-input-checkbox:checked + label::after {
   content: "";
-
   position: absolute;
   top: 0;
   left: -40px;
   width: 27px;
   height: 23px;
-
-
-  background-image: url("../img/checkbox-on.svg");
+  background-image: url("../img/checkbox-on.png");
   background-repeat: no-repeat;
   background-position: 0 0;
+}
+
+.filter-input-checkbox:checked:disabled + label::after {
+  background-image: url("../img/checkbox-on-disabled.png");
 }
