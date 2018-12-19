@@ -87,7 +87,7 @@ input[type="checkbox"].visually-hidden {
   width: 240px;
   /*Center vertically  ie */
   display: -ms-flexbox;
-  /*min-height: 56px;*/
+  min-height: 56px;
 }
 
 .menu-item:nth-child(1) {
@@ -265,6 +265,12 @@ input[type="checkbox"].visually-hidden {
   line-height: 21px;
   font-weight: bold;
   text-align: center;
+}
+/*для ie*/
+.third_reason,
+.fourth_reason,
+.fifth_reason {
+  align-items: stretch;
 }
 
 .fifth_reason p {
