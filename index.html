@@ -5,7 +5,7 @@
     <title>HTML Academy: Седона</title>
     <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
     <link href="css/normalize.css" rel="stylesheet">
-    <link href="css/style.css" rel="stylesheet">
+    <link href="css/style.min.css" rel="stylesheet">
   </head>
   <body class="index">
   <div class="size">
@@ -30,7 +30,7 @@
         <img class="polygon" src="img/polygon.svg" alt="" width="1200" height="59">
       </div>
       <section class="introduction">
-        <h2>Седона — небольшой городок в Аризоне,<br> заслуживающий большего!</h2>
+        <h2>Седона — небольшой городок в Аризоне, заслуживающий большего!</h2>
         <p>Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
       </section>
       <section class="features">
@@ -38,23 +38,29 @@
         <ul>
           <li class="feature-item town">
             <div class="text">
-              <h3>Настоящий<br>городок</h3>
+              <h3>Настоящий городок</h3>
               <span> — №1 —</span>
               <p>Седона — не аттракцион для туристов, там течёт своя жизнь</p>
             </div>
             <img src="img/town.jpg" alt="Картинка городка" width="800" height="256">
           </li>
           <li class="feature-item col white house">
-            <h3>Жильё</h3>
-            <p>Рекомендуем пожить в настоящем<br>мотеле, всё как в кино!</p>
+            <div class="feature-item-house">
+              <h3>Жильё</h3>
+              <p>Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
+            </div>
           </li>
           <li class="feature-item col white food">
-            <h3>Еда</h3>
-            <p>Всегда заказывайте фирменный бургер,<br>вы не разочаруетесь!</p>
+            <div class="feature-item-food">
+              <h3>Еда</h3>
+              <p>Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
+            </div>
           </li>
           <li class="feature-item col white burger">
-            <h3>Сувениры</h3>
-            <p>Не только китайского, но и местного<br>производства!</p>
+            <div class="feature-item-burger">
+              <h3>Сувениры</h3>
+              <p>Не только китайского, но и местного производства!</p>
+            </div>
           </li>
 
           <li class="feature-item mountain">
@@ -67,17 +73,17 @@
           </li>
 
           <li class="feature-item col grey third_reason">
-            <h3>Небольшая<br>площадь</h3>
+            <h3>Небольшая площадь</h3>
             <span>— №3 —</span>
             <p>Все достопримечательности  находятся очень близко</p>
           </li>
           <li class="feature-item col grey fourth_reason">
-            <h3>Красивая<br>дорога</h3>
+            <h3>Красивая дорога</h3>
             <span>— №4 —</span>
             <p>Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
           </li>
           <li class="feature-item col grey fifth_reason">
-            <h3>Мало<br>туристов</h3>
+            <h3>Мало туристов</h3>
             <span>— №5 —</span>
             <p>Большинство едет в гранд каньон и толпится там</p>
           </li>
@@ -90,7 +96,7 @@
           <p>Укажите предполагаемые даты поездки,<br>и мы покажем вам лучшие предложения гостиниц в Седоне</p>
         </div>
         <div class="search-form">
-          <button class="search-button">Поиск гостиницы в Седоне</button>
+          <a class="search-button" href="#">Поиск гостиницы в Седоне</a>
         </div>
       </section>
 
@@ -100,9 +106,9 @@
             <p class="search-item long-horizontal">
               <label for="date-in">Дата заезда:</label>
               <input id="date-in" type="text" name="date-in" placeholder="24 апреля 2017">
-               <button class="calendar" type="button">
-                 <svg xmlns="http://www.w3.org/2000/svg" width="21" height="22" viewBox="0 0 21 22"><path d="M19.251 2.025h-2.845V.648c0-.381-.294-.689-.656-.689-.363 0-.656.308-.656.689v1.377h-3.938V.648c0-.381-.294-.689-.655-.689-.363 0-.657.308-.657.689v1.377H5.906V.648c0-.381-.294-.689-.656-.689-.363 0-.657.308-.657.689v1.377H1.75C.784 2.025 0 2.847 0 3.862v16.302C0 21.179.784 22 1.75 22h17.501c.966 0 1.749-.821 1.749-1.836V3.862c0-1.015-.783-1.837-1.749-1.837zm.437 18.139a.448.448 0 0 1-.437.459H1.75a.45.45 0 0 1-.438-.459V3.862a.45.45 0 0 1 .438-.459h2.844v1.378c0 .381.294.689.657.689.362 0 .656-.308.656-.689V3.403h3.938v1.378c0 .381.294.689.657.689.361 0 .655-.308.655-.689V3.403h3.938v1.378c0 .381.293.689.656.689.362 0 .656-.308.656-.689V3.403h2.845c.241 0 .437.206.437.459v16.302z"/><path d="M4.594 8.225h2.625v2.066H4.594zM4.594 11.668h2.625v2.067H4.594zM4.594 15.112h2.625v2.066H4.594zM9.188 15.112h2.625v2.066H9.188zM9.188 11.668h2.625v2.067H9.188zM9.188 8.225h2.625v2.066H9.188zM13.781 15.112h2.625v2.066h-2.625zM13.781 11.668h2.625v2.067h-2.625zM13.781 8.225h2.625v2.066h-2.625z"/></svg>
-               </button>
+              <button class="calendar" type="button">
+                <svg xmlns="http://www.w3.org/2000/svg" width="21" height="22" viewBox="0 0 21 22"><path d="M19.251 2.025h-2.845V.648c0-.381-.294-.689-.656-.689-.363 0-.656.308-.656.689v1.377h-3.938V.648c0-.381-.294-.689-.655-.689-.363 0-.657.308-.657.689v1.377H5.906V.648c0-.381-.294-.689-.656-.689-.363 0-.657.308-.657.689v1.377H1.75C.784 2.025 0 2.847 0 3.862v16.302C0 21.179.784 22 1.75 22h17.501c.966 0 1.749-.821 1.749-1.836V3.862c0-1.015-.783-1.837-1.749-1.837zm.437 18.139a.448.448 0 0 1-.437.459H1.75a.45.45 0 0 1-.438-.459V3.862a.45.45 0 0 1 .438-.459h2.844v1.378c0 .381.294.689.657.689.362 0 .656-.308.656-.689V3.403h3.938v1.378c0 .381.294.689.657.689.361 0 .655-.308.655-.689V3.403h3.938v1.378c0 .381.293.689.656.689.362 0 .656-.308.656-.689V3.403h2.845c.241 0 .437.206.437.459v16.302z"/><path d="M4.594 8.225h2.625v2.066H4.594zM4.594 11.668h2.625v2.067H4.594zM4.594 15.112h2.625v2.066H4.594zM9.188 15.112h2.625v2.066H9.188zM9.188 11.668h2.625v2.067H9.188zM9.188 8.225h2.625v2.066H9.188zM13.781 15.112h2.625v2.066h-2.625zM13.781 11.668h2.625v2.067h-2.625zM13.781 8.225h2.625v2.066h-2.625z"/></svg>
+              </button>
             </p>
             <p class="search-item long-horizontal">
               <label for="date-out">Дата выезда:</label>
@@ -129,6 +135,7 @@
           </div>
         </form>
         <h2 class="visually-hidden">Карта</h2>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d838588.9350513984!2d-112.01068250370972!3d34.809101607770415!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da132f942b00d%3A0x5548c523fa6c8efd!2z0KHQtdC00L7QvdCwLCDQkNGA0LjQt9C-0L3QsCA4NjMzNiwg0KHQqNCQ!5e0!3m2!1sru!2sru!4v1545491842223" width="1200" height="594" frameborder="0" style="border:0" allowfullscreen></iframe>
         <p>
           <img src="img/map.jpg" alt="Карта" width="1200" height="594">
         </p>
@@ -176,44 +183,6 @@
       </section>
     </main>
   </div>
-  <script>
-    var button = document.querySelector(".search-button");
-    var form = document.querySelector("form");
-    var dateIn = form.querySelector("[id=date-in]");
-    var dateOut = form.querySelector("[id=date-out]");
-    var adults = form.querySelector("[id=adults]");
-    var kids = form.querySelector("[id=kids]");
-    var storage_adults = localStorage.getItem("adults");
-    var storage_kids = localStorage.getItem("kids");
-
-    /*отображение формы для поиска и localStorage для полей взрослые и дети*/
-    button.addEventListener("click",function (evt) {
-      evt.preventDefault();
-      form.classList.toggle("modal-show");
-      if (storage_adults) {
-        adults.value = storage_adults;
-      } else {
-        adults.focus();
-      }
-      if (storage_kids) {
-        kids.value = storage_kids;
-      } else if (!storage_adults)  {
-        adults.focus();
-      } else {kids.focus();}
-    });
-    /*анимация формы*/
-
-    /*проверка обязательных полей*/
-    form.addEventListener("submit", function (evt) {
-      //evt.preventDefault();
-      if (!dateIn.value || !dateOut.value || !adults.value || !kids.value) {
-        evt.preventDefault();
-        console.log("Нужно заполнить обязательные поля: дата заезда, дата выезда, взрослые, дети!")
-      } else {
-        localStorage.setItem("adults", adults.value);
-        localStorage.setItem("kids", kids.value);
-      }
-     });
-  </script>
+  <script src="js/script.min.js"></script>
   </body>
 </html>
