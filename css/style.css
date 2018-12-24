@@ -927,7 +927,8 @@ input[type="checkbox"].visually-hidden {
   display: flex;
   padding: 30px 0;
   list-style: none;
-  height: 90px;
+  min-height: 90px;
+  height: auto;
   padding-left: 72px;
   border-top: 1px solid #e5e5e5;
 }
@@ -963,6 +964,7 @@ input[type="checkbox"].visually-hidden {
 .hotel-type {
   margin: 0;
   padding: 0;
+  width: 258px;
   margin-bottom: 10px;
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
@@ -971,7 +973,10 @@ input[type="checkbox"].visually-hidden {
   -ms-flex-pack: justify;
   justify-content: space-between;
 }
-
+.hotel-item-image,
+.rate {
+  height: 90px;
+}
 .hotel-item-category {
   width: 110px;
 }
@@ -1154,7 +1159,8 @@ input[type="checkbox"].visually-hidden {
   width: 100%;
   margin-left: 30px;
   margin-right: 73px;
-  height: 90px;
+  min-height: 90px;
+  height: auto;
 }
 
 .description-type {
