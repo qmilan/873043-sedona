@@ -472,8 +472,9 @@ input[type="checkbox"].visually-hidden {
   padding: 6px 0;
 }
 
-label.kids-label {
+.kids label {
   width: 65px;
+  text-align: left;
 }
 
 .adults button,
