@@ -433,6 +433,7 @@ input[type="checkbox"].visually-hidden {
 .calendar {
   position: absolute;
   right: 55px;
+  background-color: transparent;
 }
 
 .calendar svg{
@@ -473,6 +474,11 @@ input[type="checkbox"].visually-hidden {
 
 label.kids-label {
   width: 65px;
+}
+
+.adults button,
+.kids button {
+  background-color: #f2f2f2;
 }
 
 .long-horizontal {
@@ -535,7 +541,6 @@ label.kids-label {
   border: 0;
   padding: 0;
   margin: 0;
-  background-color: #f2f2f2;
   font-weight: 900;
 }
 
