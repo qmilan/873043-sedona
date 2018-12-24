@@ -1378,6 +1378,7 @@ input[type="checkbox"].visually-hidden {
 .range-toggle:hover {
   width: 6px;
   height: 6px;
+  top: -10px;
 }
 
 .range-toggle-min {
