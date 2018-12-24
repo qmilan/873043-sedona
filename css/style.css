@@ -165,7 +165,8 @@ input[type="checkbox"].visually-hidden {
   display: -ms-flexbox;
   display: flex;
   list-style: none;
-  height: 256px;
+  min-height: 256px;
+  height: auto;
 }
 
 /*первый раздел*/
@@ -174,7 +175,7 @@ input[type="checkbox"].visually-hidden {
   width: 400px;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
-  padding: 48px 60px 60px;
+  padding: 48px 60px 57px;
   color: #ffffff;
   background-color: #81b3d2;
   display: -webkit-inline-box;
@@ -187,6 +188,12 @@ input[type="checkbox"].visually-hidden {
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
+}
+
+.town,
+.mountain{
+  width: 1200px;
+  background-color: #81b3d2;
 }
 
 .town h3 {
@@ -316,7 +323,7 @@ input[type="checkbox"].visually-hidden {
   flex-direction: row-reverse;
 }
 .mountain-text {
-  padding: 46px 48px 60px;
+  padding: 46px 48px 59px;
 }
 
 .mountain p {
