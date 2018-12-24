@@ -1464,12 +1464,8 @@ label.kids-label {
   height: 23px;
 }
 
-/*для примера*/
-.filter-input-checkbox:disabled + label::before {
-  background-image: url("../img/checkbox-off-disabled.png");
-}
-
-.filter-input-checkbox:checked + label::after {
+.filter-input-checkbox:checked + label::after,
+.filter-input-checkbox:checked + label::before {
   content: "";
   position: absolute;
   top: 0;
@@ -1481,6 +1477,12 @@ label.kids-label {
   background-position: 0 0;
 }
 
-.filter-input-checkbox:checked:disabled + label::after {
+/*для примера*/
+.filter-input-checkbox:disabled + label::before {
+  background-image: url("../img/checkbox-off-disabled.png");
+}
+
+.filter-input-checkbox:checked:disabled + label::after,
+.filter-input-checkbox:checked:disabled + label::before {
   background-image: url("../img/checkbox-on-disabled.png");
 }
