@@ -1425,7 +1425,8 @@ input[type="checkbox"].visually-hidden {
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
-  height: 110px;
+  min-height: 110px;
+  height: auto;
 }
 
 .filter li {
