@@ -262,6 +262,7 @@ input[type="checkbox"].visually-hidden {
   min-height: 330px;
   height: auto;
   padding-top: 162px;
+  justify-content: flex-start;
 }
 
 .col h3,
@@ -343,6 +344,7 @@ input[type="checkbox"].visually-hidden {
   flex-direction: column;
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
+  justify-content: flex-start;
 }
 
 .grey span {
@@ -1165,6 +1167,7 @@ input[type="checkbox"].visually-hidden {
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
+  width: 100%;
 }
 
 .rate {
