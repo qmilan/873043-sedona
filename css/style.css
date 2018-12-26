@@ -401,12 +401,11 @@ input[type="checkbox"].visually-hidden {
   font-size: 21px;
   color: black;
   font-weight: bold;
-  margin: auto ;
+  margin: auto;
   margin-bottom: 27px;
 }
 
 .introduction p {
-  /*width: 575px;*/
   font-size: 14px;
   color: #333333;
   font-weight: normal;
@@ -479,7 +478,7 @@ input[type="checkbox"].visually-hidden {
 
 .long-horizontal {
   padding-bottom: 30px;
-  text-transform: uppercase
+  text-transform: uppercase;
 }
 
 .long-horizontal input {
@@ -996,8 +995,8 @@ input[type="checkbox"].visually-hidden {
 }
 
 .hotel-item-button {
-  margin-bottom: 0px;
-  margin-top: 0px;
+  margin-bottom: 0;
+  margin-top: 0;
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
