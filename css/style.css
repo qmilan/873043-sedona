@@ -1363,9 +1363,7 @@ input[type="checkbox"].visually-hidden {
 }
 
 .range-toggle:hover {
-  width: 6px;
-  height: 6px;
-  top: -10px;
+  transform: scale(1.2);
 }
 
 .range-toggle-min {
@@ -1466,7 +1464,6 @@ input[type="checkbox"].visually-hidden {
   height: 23px;
 }
 
-.filter-input-checkbox:checked + label::after,
 .filter-input-checkbox:checked + label::before {
   content: "";
   position: absolute;
@@ -1484,7 +1481,6 @@ input[type="checkbox"].visually-hidden {
   background-image: url("../img/checkbox-off-disabled.png");
 }
 
-.filter-input-checkbox:checked:disabled + label::after,
 .filter-input-checkbox:checked:disabled + label::before {
   background-image: url("../img/checkbox-on-disabled.png");
 }
