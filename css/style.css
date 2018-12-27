@@ -656,7 +656,7 @@ input[type="checkbox"].visually-hidden {
 }
 
 .search-form-modal {
-  display: none;
+  display: block;
   text-align: center;
   background: url("../img/intro-background.png") 0 0;
   position: absolute;
@@ -671,6 +671,10 @@ input[type="checkbox"].visually-hidden {
   display: block;
   -webkit-animation: bounce 0.6s;
   animation: bounce 0.6s;
+}
+
+.modal-hidden {
+  display: none;
 }
 
 .button {

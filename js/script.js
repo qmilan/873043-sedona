@@ -8,9 +8,17 @@ var storage_adults = localStorage.getItem("adults");
 var storage_kids = localStorage.getItem("kids");
 
 /*отображение формы для поиска и localStorage для полей взрослые и дети*/
+if (!(form.classList.contains("modal-hidden"))) {
+  form.classList.add("modal-hidden")
+}
 button.addEventListener("click",function (evt) {
   evt.preventDefault();
   form.classList.toggle("modal-show");
+  if (!(form.classList.contains("modal-show"))) {
+    form.classList.add("modal-hidden");
+  } else {
+    form.classList.remove("modal-hidden");
+  }
   if (storage_adults) {
     adults.value = storage_adults;
   } else {
